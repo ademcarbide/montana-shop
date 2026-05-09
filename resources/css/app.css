@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* ---- HEADER ---- */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    padding: 6px 16px;
+    border-bottom: 1px solid #d4c5a9;
+    background: rgba(245, 240, 232, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header-site-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header-logo-circle img {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.header-social {
+    color: #2c2c2c;
+    font-size: 20px;
+    transition: color 0.2s, transform 0.2s;
+}
+.header-social:hover {
+    transform: translateY(-3px);
+}
+.instagram:hover { color: #e1306c; }
+.facebook:hover  { color: #1877f2; }
+.tiktok:hover    { color: #c9a84c; }
+
+body {
+    padding-top: 60px;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+  background-color: grey;
+  padding: 36px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer p {
+  color: gold;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
